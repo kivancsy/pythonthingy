@@ -3,9 +3,8 @@ import speech_recognition
 import pyttsx3
 import webbrowser
 import wikipedia
-import wolframalpha
 
-# Burada engine yüklüyoruz
+
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -19,7 +18,6 @@ def speak(text, rate=120):
     engine.runAndWait()
 
 
-# Burada browser şey yapıyoruz
 opera_path = r"C:\Users\kivan\AppData\Local\Programs\Opera GX\launcher.exe"
 webbrowser.register("opera", None, webbrowser.BackgroundBrowser(opera_path))
 
